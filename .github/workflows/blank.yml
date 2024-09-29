@@ -22,4 +22,4 @@ jobs:
       - name: List Global Packages
         run: npm list -g --depth=0
       - name: Run Collection
-        run: newman run index.json -e Env1.json -r newman-reporter-htmlextra
+        run: newman run index.json -e Env1.json -r ./node_modules/newman-reporter-htmlextra
