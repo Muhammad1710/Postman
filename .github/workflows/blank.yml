@@ -19,5 +19,7 @@ jobs:
       - name: install htmlnpm
         run: |
           npm install -g newman-reporter-htmlextra
+      - name: List Global Packages
+        run: npm list -g --depth=0
       - name: Run Collection
         run: newman run index.json -e Env1.json -r htmlextra
