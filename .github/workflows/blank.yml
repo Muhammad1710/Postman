@@ -11,9 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Set up Node.js
-        uses: actions/setup-node@v20
+        uses: actions/setup-node@latest
         with:
-          node-version: '20'
+          node-version: '18'
       - name: install Newman
         run: npm install newman
       - name: install htmlnpm
